@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/stylesheets/style.css">
+  <title>Document</title>
+</head>
+<body>
+  
+<h1 id="homeBar">Let's update this Item !</h1>
+
+<div id="newTodo">
+  
+  <form action="/beach/<%= beach._id%>?_method=PUT" method="post">
+    <label for="title">Your name for the location:
+    <input type="text" name="title" id="itemTitle" value="<%= beach.title %> ">  
+  </label>
+    <br>
+  <label for="level" >Level of Difficulty:
+    <!-- <input type="text" name="level" value="<%= beach.level %>"> -->
+    <select name="level" id="" value="<%= beach.level %> ">
+      <option value="easy">easy</option>
+      <option value="normal">normal</option>
+      <option value="hard">hard</option>
+      <option value="expert">expert</option>
+    </select>
+  </label>
+    <br>
+  <label for="gear">Gear needed:
+    <input type="text" name="gear" value="<%= beach.gear %> ">
+  </label>
+    <br>
+  <label for="area"> Provide an area and desciption of how to get there: 
+    <input type="text"  name="area" value="<%= beach.area %>">
+  </label>
+  <br>
+  <button type="submit" id="submit">Submit</button>
+</form>
+</div>
+
+
+<div id="homeGroup">
+<a href="/beach" id="">BACK</a>
+<a id="" href="/">HOME</a>
+</div>
+
+</body>
+</html>

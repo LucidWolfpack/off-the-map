@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/stylesheets/style.css">
+  <title>Document</title>
+</head>
+<body id="beachBody">
+  
+<h1 id="beachBar"> Beaches and Water Adventures!</h1>
+
+  <div id="newBeach">
+    <p id="aboutSection">
+      Have you found a new beach or maybe a secret spot just around the river bend? Tell us about how you found it and help others chart a 
+      path to this aquatic destination. Locations for this catagory are water based: beaches, rope swings, waterfalls and many other 
+      areas that are good for a summer time swim! 
+    </p>
+    <form action="/beach" method="POST" id="beachForm">
+        <label for="title">Your name for the location:
+        <input type="text" name="title" required placeholder="Name your destination" id="beachTitle">  
+      </label>
+        <br>
+      <label for="level" >Level of Difficulty:
+        <select name="level" id="difficulty" >
+          <option value="easy">easy</option>
+          <option value="normal">normal</option>
+          <option value="hard">hard</option>
+          <option value="expert">expert</option>
+        </select>
+      </label>
+        <br>
+      <label for="gear">Gear needed:
+        <input type="text" name="gear" required>
+      </label>
+        <br>
+      <label for="area"> Provide an area and desciption of how to get there: 
+        <input type="text"  name="area" required id="descriptionBox">
+      </label>
+      <br>
+      <button type="submit" id="submit">Submit</button>
+    </form>
+  </div>
+
+
+<div id="homeGroup">
+  <a href="/beach" id="">BACK</a>
+  <a id="" href="/">HOME</a>
+</div>
+
+</body>
+</html>

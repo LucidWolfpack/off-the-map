@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/stylesheets/style.css">
+  <title>Document</title>
+</head>
+<body>
+  
+<h1 id="homeBar">Let's make a Todo !</h1>
+
+  <div id="newTodo">
+    <p>
+      This is where we make our todos. they can be any kind or Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ullam fuga cumque! Impedit temporibus explicabo, adipisci repellat dolore ratione perspiciatis, quidem inventore corrupti, ea non accusamus. Similique dicta blanditiis placeat.
+    </p>
+    <form action="/todos" method="POST">
+        <label for="title">Title:
+        <input type="text" name="title" required placeholder="Title" id="todoTitle">  
+      </label>
+      <br>
+      <label for="complete">Complete:
+        <input type="checkbox" name="complete" id="cBox" >
+      </label>
+      <br>
+      <button type="submit" id="submit">Submit</button>
+    </form>
+  </div>
+
+
+<div id="homeGroup">
+  <a href="/todos" id="">BACK</a>
+  <a id="" href="/">HOME</a>
+</div>
+
+</body>
+</html>

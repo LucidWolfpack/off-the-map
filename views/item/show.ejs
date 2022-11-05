@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/stylesheets/style.css">
+  <title>Item</title>
+</head>
+<body id="beachBody" >
+  <h2 id="beachHeader">
+    <%= beach.title %> 
+  </h2>
+    <li id=>
+      Level of Difficulty
+      <%= beach.level %>
+    </li>
+    <li>
+      Gear needed:
+      <%= beach.gear %>
+    </li>
+    <p id="">
+      <h3 >
+        How to get to area: 
+      </h3>
+      <br>
+      <%=beach.area  %> 
+    </p>
+  
+  <form action="/beach/<%= beach._id%>?_method=DELETE" method="post" id="deleteButton">
+    <button type="submit">  Delete this area</button>
+  </form>
+
+  <div id="homeGroup">
+    <a href="/beach/<%= beach.id %>/edit" > Click to Edit</a>
+    <a href="/beach" >BACK</a>
+  </div>
+
+</body>
+</html>

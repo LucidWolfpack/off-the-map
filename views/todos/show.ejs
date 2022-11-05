@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/stylesheets/style.css">
+  <title>Document</title>
+</head>
+<body>
+
+  <li id="showItem">
+    <%= todo.title %>: 
+    <%= todo.complete ? "complete" : "incomplete" %> 
+  </li>
+  <ul>
+    <% todo.instances.forEach(instance => { %>
+      <li>
+        <%= instance.ontime ? "ontime" : "late" %> 
+        <%= instance.createdAt.toISOString().slice(0,10) %> 
+        <form action="/todos/<%= todo._id%>/instances/<%= instance._id %>?_method=DELETE" method="post" id="deleteButton">
+          <button type="submit">  Delete this Instance</button>
+        </form>
+      </li>
+    <% }) %> 
+  </ul>
+
+  <form action="/todos/<%= todo._id%>?_method=DELETE" method="post" id="deleteButton">
+    <button type="submit">  Delete this Todo</button>
+  </form>
+
+  <form action="/todos/<%= todo._id%>/instances" method="post">
+    <label for="ontime">ontime:
+      <input type="checkbox" name="ontime" id="cBox" >
+    </label>
+    <button type="submit"> Submit</button>
+  </form>
+  <br>
+
+  <div id="homeGroup">
+    <a href="/todos/<%= todo.id %>/edit"> Click to Edit</a>
+    <a href="/todos">BACK</a>
+  </div>
+
+</body>
+</html>
