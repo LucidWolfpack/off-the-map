@@ -5,30 +5,28 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/stylesheets/style.css">
-
-  <title>Items</title>
+  <title>Todos</title>
 </head>
-<body id="beachBody">
-  
-
+<body>
   <h1 id="homeBar"> 
     <%= title %> 
+    
   </h1>
 
-
-
   <div id="list">
-  <% beaches.forEach(b => { %>
-    <li>
-      to find out more about
-        <a href="/beach/<%= b.id %>"> <%= b.title %> </a> 
+    <% todos.forEach(t => { %>
+      <li>
+        <%= t.title %>: 
+        <a href="/todos/<%= t._id %>">details</a>
       </li>
-    <% }) %>
+      <% }) %>
   </div>
+
 <div id="homeGroup">
-  <a href="/beach/new"> make a new Location</a>
+  <a href="/todos/new">Create Todo</a>
   <a id="homeButton" href="/">HOME</a>
 </div>
+
 
 </body>
 </html>

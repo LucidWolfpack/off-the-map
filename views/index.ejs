@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/stylesheets/style.css">
+  <link rel="stylesheet" href="">
   <title><%= title %></title>
 </head>
 <body id="homeIndex" class="area">
@@ -18,20 +19,29 @@
     in the city, the mountains, maybe even beaches that you have to kayak to. There are still explorers out there, 
     and here they can share some of their discoveries with those looking for an off road adventure. 
   </p>
-
-<div id="indexBeach">
-  <a href="/beach" style="float:left" id="">Beaches and Water Fronts</a>
-  <p>
-    In this section the adventurer will find out about locations that revolve around the water. 
-    While the most desired might be beaches hidden from the public, a place where you can be by the ocean and 
-    yet away from all the people. Or perhaps there is a ropeswing tied to an old sycamore tree that's 
-    jsut around the river bend
-  </p>
-</div>
-
-  <div id="homeGroup">
-    <a href="/todos">Todos</a>
+  
+  <div id="indexBeach">
+    <div class="container">
+      <a href="/beach" style="float:left" id="beachAnchor" >
+        <img id="oceanPic" src="https://cdn-icons-png.flaticon.com/512/4357/4357730.png" alt="Learn More">
+        <div class="centered">
+          See Locations !
+        </div>
+      </a>
+    </div>
+      
+    <p id="beachIntro">
+        In this section the adventurer will find out about locations that revolve around the water. 
+        While the most desired might be beaches hidden from the public, a place where you can be by the ocean and 
+        yet away from all the people. Or perhaps there is a ropeswing tied to an old sycamore tree that's 
+        jsut around the river bend
+    </p>
   </div>
+    
+      <div id="">
+        <a href="/todos">Todos</a>
+      </div>
+
 <br>
   <ul class="circles">
     <li></li>
