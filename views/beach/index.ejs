@@ -5,19 +5,19 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/stylesheets/style.css">
-  <title>Todos</title>
+  <title></title>
 </head>
-<body>
+<body class="area">
   <h1 id="homeBar"> 
     <%= title %> 
     
   </h1>
 
   <div id="list">
-    <% todos.forEach(t => { %>
+    <% beaches.forEach(b => { %>
       <li>
-        <%= t.title %>: 
-        <a href="/todos/<%= t._id %>">details</a>
+        <%= b.title %>: 
+        <a href="/beach/<%= b._id %>">details</a>
       </li>
       <% }) %>
   </div>
@@ -26,6 +26,21 @@
   <a href="/todos/new">Create Todo</a>
   <a id="homeButton" href="/">HOME</a>
 </div>
+
+<ul class="circles">
+  <li></li>
+  <li></li>
+  <li>
+    <img src="https://cdn-icons-png.flaticon.com/512/8827/8827459.png" alt="" style="height: 150px; width: 100px;">
+  </li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+</ul>
 
 
 </body>

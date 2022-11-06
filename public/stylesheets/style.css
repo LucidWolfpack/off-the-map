@@ -164,7 +164,7 @@ input{
   margin: 0px;
   text-align: left;
   vertical-align: bottom;
-  text-decoration: underline;
+  font-family: Luminari, fantasy;
 }
 
 #homeGroup{
@@ -184,7 +184,7 @@ input{
 }
 
 body{
-  height: 100vh;
+  height: 100%;
   border: 1px solid #8129d5;
   border-radius: 5px;
   font: 24px "Lucida Grande", Helvetica, Arial, sans-serif;
@@ -194,6 +194,7 @@ body{
   font-size: 20px;
   display: block;
 }
+
 
 a{
   color: #994ff2;
@@ -211,39 +212,43 @@ a:hover{
 #indexP{
   font-size: 30px;
   margin: 15px;
+  margin-left: 35px;
+  margin-right: 35px;
+  margin-bottom: 35px;
   font-family: American Typewriter, serif;
 }
 
 #indexBar{
   background: linear-gradient(to right, #30004d,#7d0000c4);
-  font-family: Apple Chancery, cursive;
+  font-family: Luminari, fantasy;
   font-size: 60px;
   color: #C8B090;
   padding: 50px;
   margin: 0px;
   text-align: left;
   vertical-align: bottom;
-  text-decoration: underline;
 }
 
 #indexBeach{
   display: flex;
   z-index: auto;
   align-items: center;
-  margin-top: 40px;
 }
 
 #beachAnchor{
   margin: 100px;
+  margin-top: 40px;
+  margin-bottom: 40px;
   display: flex;
   justify-content: center;
   border-radius: 100px;
   color: #ae43f0;
+  font-size: 25px;
 }
 
 #beachIntro{
-  margin: 50px;
-  padding: 60px;
+  margin: 30px;
+  padding: 40px;
   font-size: 30px;
   font-family: American Typewriter, serif;
 }
@@ -276,12 +281,6 @@ start of animation
   padding: 0px;
 }
 
-
-body{
-  font-family: 'Exo', sans-serif;
-}
-
-
 .context {
   width: 100%;
   position: absolute;
@@ -296,10 +295,10 @@ body{
 
 
 .area{
-  background: #646ae0;  
+  background: #676cd1;  
   background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);  
   width: 100%;
-  height:150vh;
+  height:200vh;
 }
 
 .circles{
@@ -307,9 +306,10 @@ body{
   top: 0;
   left: 0;
   width: 100%;
-  height: 150vh;
+  height: 200vh;
   overflow: hidden;
   z-index: -1;
+  height: 200vh;
 }
 
 .circles li{
@@ -321,6 +321,7 @@ body{
   background: rgba(255, 255, 255, 0.2);
   animation: animate 25s linear infinite;
   bottom: -150px;
+  
 }
 
 .circles li:nth-child(1){
@@ -413,6 +414,7 @@ body{
       transform: translateY(-1000px) rotate(720deg);
       opacity: 0;
       border-radius: 50%;
+      top: 100%;
   }
 
 }
