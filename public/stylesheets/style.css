@@ -22,6 +22,8 @@ h3{
   padding-top: 20px;
 }
 
+/** start for beach section **/
+
 #newBeach{
   display: flex;
   margin-top: 5%;
@@ -77,13 +79,38 @@ h3{
 
 #beachBar{
   background: linear-gradient(to right, #30004d,#7d0000c4);
+  font-family: Luminari, fantasy;
   color: #C8B090;
   padding: 50px;
-  margin: 0px;
   text-align: left;
-  vertical-align: bottom;
-  text-decoration: underline;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  background-image: url(https://images3.alphacoders.com/689/689539.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 400px;
 }
+
+#beachList{
+  margin: 30px;
+  padding: 40px;
+  font-size: 30px;
+  font-family: Blippo, fantasy;
+  opacity: .6;
+  border-radius: 20%;
+  display: flex;
+}
+
+#beachDiv{
+  margin: 30px;
+  padding: 40px;
+  font-size: 30px;
+  border-radius: 20%;
+  background-color: #8abfde;
+}
+
+/** end of beach section **/
 
 form{
   border: 1px solid darkred;
@@ -120,14 +147,6 @@ input{
   box-shadow: none;
 }
 
-#todoTitle{
-  height: 25px;
-  width: 100px;
-  align-items: center;
-  border: 1px solid darkred;
-  border-radius: 5px;
-}
-
 #cBox{
   height: 18px;
   width: 18px;
@@ -136,12 +155,6 @@ input{
 #cBox:hover{
   height: 20px;
   width: 20px;
-}
-
-#newTodo{
-  display: flex;
-  justify-content: right;
-  padding-top: 10%;
 }
 
 #submit{
@@ -172,17 +185,12 @@ input{
   padding-top: 20px;
 }
 
-#todoInfo{
-  padding-top: 55px;
-  padding-left: 45px;
-}
-
 #showItem{
   padding: 55px;
 }
 
 body{
-  height: 100%;
+  /* height: 100%; */
   border: 1px solid #8129d5;
   border-radius: 5px;
   font: 24px "Lucida Grande", Helvetica, Arial, sans-serif;
@@ -230,10 +238,9 @@ a:hover{
   margin-right: 35px;
   margin-bottom: 35px;
   font-family: Blippo, fantasy;
-}
-
-.firstWord{
-  text-decoration: double;
+  padding: 20px;
+  background: #e3d0ff;
+  border-radius: 10%;
 }
 
 .indexBar{
@@ -245,10 +252,14 @@ a:hover{
   align-items: center;
   display: flex;
   justify-content: space-between;
+  background-image: url(https://images.fineartamerica.com/images-medium-large-5/clouds-over-mountains-and-ocean-konstantin-trubavin.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 400px;
 }
 
 #homeIndex{
-  height: 245vh;
+  height: 330vh;
 }
 
 #indexBeach{
@@ -297,14 +308,7 @@ a:hover{
   transform: translate(-50%, -50%);
 }
 
-/*
-start of animation
-*/
-
-/* *{
-  margin: 0px;
-  padding: 0px;
-} */
+/** start of animation **/
 
 .context {
   width: 100%;
@@ -323,7 +327,7 @@ start of animation
   background: #676cd1;  
   background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);  
   width: 100%;
-  height:200vh;
+  height:100%;
 }
 
 .circles{
@@ -429,7 +433,7 @@ start of animation
 @keyframes animate {
 
   0%{
-      transform: translateY(-1600px) rotate(0deg);
+      transform: translateY(-850px) rotate(0deg);
       opacity: 1;
       border-radius: 0;
   }

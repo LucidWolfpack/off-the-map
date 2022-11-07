@@ -9,7 +9,7 @@
 </head>
 <body class="area">
 
-  <div class="indexBar">
+  <div id="beachBar">
     <h1 class="header"> 
       Beaches / Water  Locations
     </h1>
@@ -24,27 +24,28 @@
       <img class="headIcon" src="https://cdn-icons-png.flaticon.com/512/1551/1551074.png" alt="">
       <img class="headIcon" src="https://cdn-icons-png.flaticon.com/512/63/63610.png" alt="">
     </div>
-
   </div>
 
-  <div id="list">
+  <p id="indexP">
+    Make sure you bring a swimsuit and towel to these locations! Get ready to go swimming or lay out in the sun once you make here. These spots are for those who love being in and aroud the water. Also great for summer time visits or just to relex and enjoy being outside !
+  </p>
+
+  <div id="beachList">
     <% beaches.forEach(b => { %>
-      <li>
+      <div id="beachDiv">
         <%= b.title %>: 
         <a href="/beach/<%= b._id %>">details</a>
-      </li>
+      </div>
       <% }) %>
   </div>
+
+  Add you new location here !!
 
 
 <ul class="circles">
   <li></li>
-  <li>
-    <img src="https://cdn-icons-png.flaticon.com/512/4859/4859293.png" alt="" style="height: 100px; width: 90px; background: none;">
-  </li>
-  <li>
-    <img src="https://cdn-icons-png.flaticon.com/512/8827/8827459.png" alt="" style="height: 110px; width: 90px; background: none;">
-  </li>
+  <li></li>
+  <li></li>
   <li></li>
   <li></li>
   <li></li>
