@@ -8,10 +8,24 @@
   <title></title>
 </head>
 <body class="area">
-  <h1 id="homeBar"> 
-    <%= title %> 
-    
-  </h1>
+
+  <div class="indexBar">
+    <h1 class="header"> 
+      Beaches / Water  Locations
+    </h1>
+
+    <div id="iconPosition">
+      <a href="/">
+        <img class="headIcon" src="https://cdn-icons-png.flaticon.com/512/1946/1946436.png" alt="">
+      </a>
+      <a href="/beach">
+        <img class="headIcon" src="https://cdn-icons-png.flaticon.com/512/2347/2347758.png" alt="">
+      </a>
+      <img class="headIcon" src="https://cdn-icons-png.flaticon.com/512/1551/1551074.png" alt="">
+      <img class="headIcon" src="https://cdn-icons-png.flaticon.com/512/63/63610.png" alt="">
+    </div>
+
+  </div>
 
   <div id="list">
     <% beaches.forEach(b => { %>
@@ -22,16 +36,14 @@
       <% }) %>
   </div>
 
-<div id="homeGroup">
-  <a href="/todos/new">Create Todo</a>
-  <a id="homeButton" href="/">HOME</a>
-</div>
 
 <ul class="circles">
   <li></li>
-  <li></li>
   <li>
-    <img src="https://cdn-icons-png.flaticon.com/512/8827/8827459.png" alt="" style="height: 150px; width: 100px;">
+    <img src="https://cdn-icons-png.flaticon.com/512/4859/4859293.png" alt="" style="height: 100px; width: 90px; background: none;">
+  </li>
+  <li>
+    <img src="https://cdn-icons-png.flaticon.com/512/8827/8827459.png" alt="" style="height: 110px; width: 90px; background: none;">
   </li>
   <li></li>
   <li></li>

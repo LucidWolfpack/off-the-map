@@ -33,8 +33,6 @@ h3{
   
 }
 
-
-
 #beachForm{
   border-radius: 900px;
   border: none;
@@ -208,6 +206,22 @@ a:hover{
   width: 34px;
 }
 
+.header{
+  font-size: 80px;
+  margin: 0px;
+  display: flex;
+}
+
+.headIcon{
+  height: 40px;
+  width: 40px;
+}
+
+#iconPosition{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
 
 #indexP{
   font-size: 30px;
@@ -215,18 +229,26 @@ a:hover{
   margin-left: 35px;
   margin-right: 35px;
   margin-bottom: 35px;
-  font-family: American Typewriter, serif;
+  font-family: Blippo, fantasy;
 }
 
-#indexBar{
+.firstWord{
+  text-decoration: double;
+}
+
+.indexBar{
   background: linear-gradient(to right, #30004d,#7d0000c4);
   font-family: Luminari, fantasy;
-  font-size: 60px;
   color: #C8B090;
   padding: 50px;
-  margin: 0px;
   text-align: left;
-  vertical-align: bottom;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+#homeIndex{
+  height: 245vh;
 }
 
 #indexBeach{
@@ -246,11 +268,14 @@ a:hover{
   font-size: 25px;
 }
 
-#beachIntro{
+#sectionIntro{
   margin: 30px;
   padding: 40px;
   font-size: 30px;
-  font-family: American Typewriter, serif;
+  font-family: Blippo, fantasy;
+  background-color: #70b8e1;
+  opacity: .6;
+  border-radius: 20%;
 }
 
 #oceanPic{
@@ -276,10 +301,10 @@ a:hover{
 start of animation
 */
 
-*{
+/* *{
   margin: 0px;
   padding: 0px;
-}
+} */
 
 .context {
   width: 100%;
@@ -401,18 +426,17 @@ start of animation
 }
 
 
-
 @keyframes animate {
 
   0%{
-      transform: translateY(0) rotate(0deg);
+      transform: translateY(-1600px) rotate(0deg);
       opacity: 1;
       border-radius: 0;
   }
 
   100%{
-      transform: translateY(-1000px) rotate(720deg);
-      opacity: 0;
+      transform: translateY(0) rotate(720deg);
+      opacity: .7;
       border-radius: 50%;
       top: 100%;
   }
