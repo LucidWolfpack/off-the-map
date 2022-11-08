@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/stylesheets/style.css">
+  <title>Document</title>
+</head>
+<body class="area">
+  
+  <div id="beachBar">
+    <h1 class="header"> 
+      Beaches / Water Locations
+    </h1>
+
+    <div id="iconPosition">
+      <a href="/">
+        <img class="headIcon" src="https://cdn-icons-png.flaticon.com/512/1946/1946436.png" alt="">
+      </a>
+      <a href="/beach">
+        <img class="headIcon" src="https://cdn-icons-png.flaticon.com/512/2347/2347758.png" alt="">
+      </a>
+      <img class="headIcon" src="https://cdn-icons-png.flaticon.com/512/281/281568.png" alt="">
+      <img class="headIcon" src="https://cdn-icons-png.flaticon.com/512/63/63610.png" alt="">
+    </div>
+  </div>
+
+
+  <div id=""">
+    <form action="/beach/<%= beach._id%>?_method=PUT" method="post">
+      <label for="title">Title:
+        <input type="text" name="title" required placeholder="Title" id="todoTitle" value="<%=beach.title%>">  
+      </label>
+        <br>
+      <label for="level"> Difficulty:
+        <input type="text" value="<%= beach.level %> ">
+      </label>
+        <br>
+      <label for="gear">Gear:
+        <input type="text" value="<%= beach.gear %> ">
+      </label>
+        <br>
+      <label for="area">Area:
+        <input type="text" name="area" value="<%= beach.area %> ">
+      </label>
+      
+      <button type="submit" id="submit">Submit</button>
+    </form>
+  </div>
+
+
+<div id="homeGroup">
+<a href="/beaches" id="">BACK</a>
+<a id="" href="/">HOME</a>
+</div>
+
+</body>
+</html>

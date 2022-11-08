@@ -30,16 +30,21 @@
     Make sure you bring a swimsuit and towel to these locations! Get ready to go swimming or lay out in the sun once you make here. These spots are for those who love being in and aroud the water. Also great for summer time visits or just to relex and enjoy being outside !
   </p>
 
-  <div id="beachList">
+  <div id="beachAreas">
     <% beaches.forEach(b => { %>
       <div id="beachDiv">
-        <%= b.title %>: 
+        <%= b.title %>:
         <a href="/beach/<%= b._id %>">details</a>
+        Difficulty:
+        <%= b.level %> 
       </div>
       <% }) %>
   </div>
 
-  Add you new location here !!
+  <div>
+    <a href="/beach/new"> Add you new location here !! </a>
+  </div>
+  
 
 
 <ul class="circles">

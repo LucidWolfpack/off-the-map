@@ -1,8 +1,5 @@
 
-li{
-  padding-left: 55px;
-  margin-top: 15px;
-}
+
 
 h1{
   font-size: 40px;
@@ -11,28 +8,24 @@ h1{
 p{
   margin: 0px;
   text-indent: 30px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 h3{
   margin-left: 15px;
 }
 
-#list{
-  padding-top: 20px;
-}
-
 /** start for beach section **/
+
+#beachList{
+  margin-left: 30px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
 
 #newBeach{
   display: flex;
   margin-top: 5%;
-  
-}
-
-#beachBody{
   background: linear-gradient(to top, #bf9823 , #e5d8b1a3, #8abfde,#70b8e1); 
-  
 }
 
 #beachForm{
@@ -46,16 +39,11 @@ h3{
   box-shadow: 0px 0px 10px white;
 }
 
-#beachTitle{
-  width: 200px;
-}
-
 #beachHeader{
   margin-top: 40px;
   margin-left: 40px;
   font-family: fantasy;
   font-size: 60px;
-  
 }
 
 #difficulty{
@@ -70,11 +58,13 @@ h3{
 
 #aboutSection{
   font-size: 25px;
-  font-family: sans-serif;
   line-height: 1.7;
+  border-radius: 15%;
+  height: 343px;
   width: 40%;
   margin: 50px;
   padding: 10px;
+  font-family: Blippo, fantasy;
 }
 
 #beachBar{
@@ -92,7 +82,7 @@ h3{
   height: 400px;
 }
 
-#beachList{
+#beachAreas{
   margin: 30px;
   padding: 40px;
   font-size: 30px;
@@ -108,6 +98,7 @@ h3{
   font-size: 30px;
   border-radius: 20%;
   background-color: #8abfde;
+  font-family: Blippo, fantasy;
 }
 
 /** end of beach section **/
@@ -218,6 +209,7 @@ a:hover{
   font-size: 80px;
   margin: 0px;
   display: flex;
+  text-decoration: wavy;
 }
 
 .headIcon{
@@ -310,19 +302,6 @@ a:hover{
 
 /** start of animation **/
 
-.context {
-  width: 100%;
-  position: absolute;
-  top:50vh;
-}
-
-.context h1{
-  text-align: center;
-  color: #fff;
-  font-size: 50px;
-}
-
-
 .area{
   background: #676cd1;  
   background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);  
@@ -350,7 +329,6 @@ a:hover{
   background: rgba(255, 255, 255, 0.2);
   animation: animate 25s linear infinite;
   bottom: -150px;
-  
 }
 
 .circles li:nth-child(1){
@@ -433,7 +411,7 @@ a:hover{
 @keyframes animate {
 
   0%{
-      transform: translateY(-850px) rotate(0deg);
+      transform: translateY(-800px) rotate(0deg);
       opacity: 1;
       border-radius: 0;
   }
@@ -441,8 +419,7 @@ a:hover{
   100%{
       transform: translateY(0) rotate(720deg);
       opacity: .7;
-      border-radius: 50%;
-      top: 100%;
+      border-radius: 100%;
   }
 
 }

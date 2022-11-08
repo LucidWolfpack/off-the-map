@@ -8,15 +8,45 @@
   <title>Document</title>
 </head>
 <body class="area">
+
+  <div id="beachBar">
+    <h1 class="header"> 
+      Beaches / Water  Locations
+    </h1>
+
+    <div id="iconPosition">
+      <a href="/">
+        <img class="headIcon" src="https://cdn-icons-png.flaticon.com/512/1946/1946436.png" alt="">
+      </a>
+      <a href="/beach">
+        <img class="headIcon" src="https://cdn-icons-png.flaticon.com/512/2347/2347758.png" alt="">
+      </a>
+      <img class="headIcon" src="https://cdn-icons-png.flaticon.com/512/1551/1551074.png" alt="">
+      <img class="headIcon" src="https://cdn-icons-png.flaticon.com/512/63/63610.png" alt="">
+    </div>
+</div>
+
   <h1 id="beachHeader">
     <%= beach.title %>
   </h1>
-  
+  <ul>
+    <li id="beachList">
+      <%= beach.level %> 
+    </li>
+    <li id="beachList">
+      <%= beach.gear %> 
+    </li>
+  </ul>
+  <div id="beachDiv">
+    <p >
+      <%= beach.area %> 
+    </p>
+  </div>
 
 
   <div id="homeGroup">
-    <a href="/todos/<%= beach.id %>/edit"> Click to Edit</a>
-    <a href="/todos">BACK</a>
+    <a href="/beach/<%= beach.id %>/edit"> Click to Edit</a>
+    <a href="/beach">BACK</a>
   </div>
 
   <ul class="circles">
