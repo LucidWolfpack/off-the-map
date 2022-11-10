@@ -8,13 +8,53 @@ h1{
 p{
   margin: 0px;
   text-indent: 30px;
+  font-family: Blippo, fantasy;
+}
+p::first-letter{
+  font-weight: bold;
+  font-size: 3rem;
 }
 
 h3{
   margin-left: 15px;
 }
+input{
+  overflow-wrap: break-word;
+}
+
+form{
+  border: 1px solid darkred;
+  border-radius: 20px;
+  color: darkred;
+  text-align: center;
+  padding: 60px;
+  padding-left: 12%;
+  padding-right: 12%;
+  font-size: 30px;
+  display: flex;
+}
+
+label{
+  display: flex;
+  align-items: center;
+  font-size: medium ;
+}
+
+input{
+  margin-left: 10px;
+}
+
+.deleteArea{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row-reverse;
+  margin-top: 30px;
+}
 
 /** start for beach section **/
+
+
 
 #beachList{
   margin-left: 30px;
@@ -25,17 +65,31 @@ h3{
 #newBeach{
   display: flex;
   margin-top: 5%;
+  height: 550px;
   background: linear-gradient(to top, #bf9823 , #e5d8b1a3, #8abfde,#70b8e1); 
 }
 
 #beachForm{
   border-radius: 900px;
+  color: darkred;
   border: none;
   height: 400px;
   align-items: center;
   justify-content: center;
   display: flex;
   flex-direction: column;
+  width: 400px;
+  text-align: center;
+  padding: 60px;
+  padding-left: 12%;
+  padding-right: 12%;
+  font-size: 30px;
+}
+
+#beachForm:hover{
+  border-radius: 900px;
+  animation-name: example;
+  animation-duration: 3s;
   box-shadow: 0px 0px 10px white;
 }
 
@@ -58,10 +112,11 @@ h3{
 
 #aboutSection{
   font-size: 25px;
-  line-height: 1.7;
+  line-height: 2;
   border-radius: 15%;
   height: 343px;
   width: 40%;
+  margin-top: 40px;
   margin: 50px;
   padding: 10px;
   font-family: Blippo, fantasy;
@@ -83,13 +138,16 @@ h3{
 }
 
 #beachAreas{
-  margin: 30px;
+  /* margin: 30px;
   padding: 40px;
-  font-size: 30px;
+  font-size: 30px; */
+  justify-items: center;
   font-family: Blippo, fantasy;
   opacity: .6;
   border-radius: 20%;
-  display: flex;
+  display: grid;
+  grid-template-columns: 375px 375px 375px;
+  grid-gap: 20px;
 }
 
 #beachDiv{
@@ -103,49 +161,18 @@ h3{
 
 /** end of beach section **/
 
-form{
-  border: 1px solid darkred;
-  border-radius: 20px;
-  color: darkred;
-  width: 400px;
-  text-align: center;
-  padding: 60px;
-  padding-left: 12%;
-  padding-right: 12%;
-  font-size: 30px;
-  display: flex;
-  flex-direction: column;
-  box-shadow: 10px 8px 9px #30004d;
-}
-
-label{
-  display: flex;
-  align-items: center;
-  font-size: medium ;
-}
-
-input{
-  margin-left: 10px;
-}
-
 #deleteButton{
-  padding: 0px;
-  padding-left: 150px;
-  background-color: #DA9F94;
-  align-items: flex-start;
-  display: flex;
-  border: none;
+  width: 120px;
+  height: 23px;
+  border-radius: 7px;
+  border: 1px solid darkred;
   box-shadow: none;
 }
 
-#cBox{
-  height: 18px;
-  width: 18px;
-}
-
-#cBox:hover{
-  height: 20px;
-  width: 20px;
+#deleteButton:hover{
+  transform: scale(1.1);
+  box-shadow: 0 0 15px darkred;
+  text-decoration: line-through;
 }
 
 #submit{
@@ -156,7 +183,8 @@ input{
 }
 
 #submit:hover{
-  box-shadow: 2px 3px 3px #30004d; 
+  transform: scale(1.1);
+  box-shadow: 0px 0px 10px #30004d; 
 }
 
 #homeBar{
@@ -183,6 +211,7 @@ input{
 body{
   /* height: 100%; */
   border: 1px solid #8129d5;
+  border-bottom: none;
   border-radius: 5px;
   font: 24px "Lucida Grande", Helvetica, Arial, sans-serif;
   background-color: #ddbdf194;
@@ -194,11 +223,11 @@ body{
 
 
 a{
-  color: #994ff2;
+  color: #8e10e7;
 }
 
 a:hover{
-  text-shadow: 0 0 5px #8334f2;
+  transform: scale(1.1);
 }
 
 #count{
@@ -216,6 +245,7 @@ a:hover{
   height: 40px;
   width: 40px;
 }
+
 
 #iconPosition{
   margin-top: 20px;
@@ -267,9 +297,10 @@ a:hover{
   display: flex;
   justify-content: center;
   border-radius: 100px;
-  color: #ae43f0;
+  color: #000000;
   font-size: 25px;
 }
+
 
 #sectionIntro{
   margin: 30px;
@@ -299,6 +330,7 @@ a:hover{
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
 
 /** start of animation **/
 
