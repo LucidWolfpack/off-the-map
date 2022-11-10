@@ -31,7 +31,7 @@
 
   <div id="newBeach">
     <p id="aboutSection">
-      Have a new area in mind? Here is where you can add a new beach or water front location. Please provide information for all the listed fields so that we can get: a rating of hard it is to get there; what gear is need to make the trip happen; and an accurate description of how to reach the location.
+      Have a new area in mind? Please provide information for all the listed fields so that we can get: a rating of hard it is to get there; what gear is need to make the trip happen; and an accurate description of how to reach the location.
     </p>
     <form action="/beach" method="post" id="beachForm">
       <label for="title">Name Your location:
@@ -47,7 +47,10 @@
       </label>
       <br>
       <label for="area">Provide a desctiption  of how to get there
-        <input type="text" name="area" id="">
+        <!-- <input type="textarea" name="area" id=""> -->
+        <textarea name="area" id="" cols="30" rows="10">
+          
+        </textarea>
       </label>
       <br>
         <button type="submit" id="submit">Submit</button>

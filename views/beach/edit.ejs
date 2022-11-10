@@ -32,7 +32,7 @@
 
   <div id="newBeach">
     <p id="aboutSection">
-      Is something out of place or needs some fine tuning? Here is where you can make adjustments to a location as needed. All feilds are able to be updated and changed. Please only adjsut if necessary
+      Is something out of place or maybe needs some fine tuning? Here is where you can make adjustments to a location as needed. All feilds are able to be updated and changed. Please only adjsut if necessary
     </p>
     <form action="/beach/<%= beach._id %>?_method=PUT" method="post" id="beachForm">
       <label for="title"> Adjust location Name:
@@ -48,7 +48,7 @@
       </label>
         <br>
       <label for="area">Provide a desctiption  of how to get there
-        <input type="text" name="area" value="<%= beach.area %> ">
+        <textarea name="area" id="" cols="30" rows="10" > <%= beach.area %> </textarea>
       </label>
         <br>
       <button type="submit" id="submit">Submit</button>

@@ -23,7 +23,7 @@ input{
 }
 
 form{
-  border: 1px solid darkred;
+  /* border: 1px solid darkred; */
   border-radius: 20px;
   color: darkred;
   text-align: center;
@@ -54,18 +54,16 @@ input{
 
 /** start for beach section **/
 
-
-
 #beachList{
   margin-left: 30px;
-  margin-top: 5px;
+  margin-top: 10px;
   margin-bottom: 5px;
 }
 
 #newBeach{
   display: flex;
   margin-top: 5%;
-  height: 550px;
+  height: 520px;
   background: linear-gradient(to top, #bf9823 , #e5d8b1a3, #8abfde,#70b8e1); 
 }
 
@@ -160,6 +158,8 @@ input{
 }
 
 /** end of beach section **/
+
+/** home page css mixed with other random **/
 
 #deleteButton{
   width: 120px;
