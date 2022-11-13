@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/stylesheets/style.css">
+  <title>Document</title>
+</head>
+<body class="area">
+
+  <div id="beachBar">
+    <h1 class="header"> 
+      Urban Exploring !
+    </h1>
+
+    <div id="iconPosition">
+      <a href="/">
+        <img class="headIcon" src="https://cdn-icons-png.flaticon.com/512/1946/1946436.png" alt="">
+      </a>
+      <a href="/beach">
+        <img class="headIcon" src="https://cdn-icons-png.flaticon.com/512/2347/2347758.png" alt="">
+      </a>
+      <a href="/mountain">
+        <img class="headIcon" src="https://cdn-icons-png.flaticon.com/512/281/281568.png" alt="">
+      </a>
+      <a href="/urban">
+        <img class="headIcon" src="https://cdn-icons-png.flaticon.com/512/63/63610.png" alt="">
+      </a>
+    </div>
+</div>
+
+  <h1 id="beachHeader">
+    <%= urban.title %>
+  </h1>
+  <ul>
+    <li id="beachList">
+      <%= urban.level %> 
+    </li>
+    <li id="beachList">
+      <%= urban.gear %> 
+    </li>
+  </ul>
+  <div id="beachDiv">
+    <p >
+      <%= urban.area %> 
+    </p>
+    
+  </div>
+
+  
+
+  <div id="homeGroup">
+    <a href="/beach/<%= beach.id %>/edit"> Click to Edit</a>
+    <a href="/beach">BACK</a>
+  </div>
+
+  <ul class="circles">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+
+
+</body>
+</html>
