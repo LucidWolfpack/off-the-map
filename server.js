@@ -12,6 +12,8 @@ import './config/database.js'
 import { router as indexRouter } from './routes/index.js'
 import { router as todosRouter } from './routes/todos.js'
 import { router as beachRouter  } from './routes/beach.js'
+import { router as mountainRouter } from './routes/mountain.js'
+import { router as urbanRouter } from './routes/urban.js'
 
 const app = express()
 
@@ -35,6 +37,8 @@ app.use(methodOverride('_method'))
 app.use('/', indexRouter)
 app.use('/todos', todosRouter)
 app.use('/beach', beachRouter)
+app.use('/mountain', mountainRouter)
+app.use('/urban', urbanRouter)
 
 app.use(function (req, res, next) { next(createError(404)) })
 

@@ -3,7 +3,7 @@ import * as beachController from "../controllers/beach.js"
 
 const router = Router()
 
-/* GET home page. */
+/* GET to pages. */
 router.get('/', beachController.index)
 router.get('/new', beachController.new)
 router.get('/:id', beachController.show)

@@ -5,13 +5,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/stylesheets/style.css">
-  <title></title>
+  <title>Urban Exploring</title>
 </head>
 <body class="area">
-
-  <div id="beachBar">
+  
+  <div id="mountainBar">
     <h1 class="header"> 
-      Beaches / Water  Locations
+      Urban Exploring
     </h1>
 
     <div id="iconPosition">
@@ -30,39 +30,13 @@
     </div>
   </div>
 
-  <p id="indexP">
-    Make sure you bring a swimsuit and towel to these locations! Get ready to go swimming or lay out in the sun once you make here. These spots are for those who love being in and aroud the water. Also great for summer time visits or just to relex and enjoy being outside !
-  </p>
 
-  <div id="beachAreas">
-    <% beaches.forEach(b => { %>
-      <div id="beachDiv">
-        See
-        <a href="/beach/<%= b._id %>">details</a>
-        for:
-        <%= b.title %>
-      </div>
-    <% }) %>
-  </div>
 
-  <div>
-    <a href="/beach/new"> Add you new location here !! </a>
-  </div>
   
 
-
-<ul class="circles">
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-</ul>
+<div id="homeGroup">
+  <a id="homeButton" href="/">HOME</a>
+</div>
 
 
 </body>

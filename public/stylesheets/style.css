@@ -1,6 +1,4 @@
 
-
-
 h1{
   font-size: 40px;
 }
@@ -51,6 +49,24 @@ input{
   flex-direction: row-reverse;
   margin-top: 30px;
 }
+
+/** start of mountain section **/
+
+#mountainBar{
+  background: linear-gradient(to right, #30004d,#7d0000c4);
+  font-family: Luminari, fantasy;
+  color: #C8B090;
+  padding: 50px;
+  text-align: left;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  background-image: url(https://images.alphacoders.com/133/133353.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 400px;
+}
+
 
 /** start for beach section **/
 
@@ -213,12 +229,11 @@ body{
   border: 1px solid #8129d5;
   border-bottom: none;
   border-radius: 5px;
-  font: 24px "Lucida Grande", Helvetica, Arial, sans-serif;
-  background-color: #ddbdf194;
+  /* background-color: #ddbdf194;
   background-image: radial-gradient(circle at 2px 2px, black 2px, transparent 0);
   background-size: 40px 40px;
   font-size: 20px;
-  display: block;
+  display: block; */
 }
 
 
