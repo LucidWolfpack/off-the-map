@@ -11,7 +11,7 @@
   
   <div id="mountainBar">
     <h1 class="header"> 
-      Mountain / Hiking 
+      Hiking / Trails
     </h1>
 
     <div id="iconPosition">
@@ -30,13 +30,27 @@
     </div>
   </div>
 
+  <p id="indexP">
+    Been itching to get to the outdoors! This section focuses on hiking trails of all kinds and all experience levels. This could also include other outdoor activites such as; rock climbing; mountain biking; and camping as well. Anything to get people up and moving while enjoying nature.
+  </p>
 
+  <div id="beachAreas">
+    <% mountains.forEach(m => { %> 
+      <div id="beachDiv">
+        See
+        <a href="/mountain/<%= m._id %>">details</a>
+        for:
+        <%= m.title %> 
+      </div>
+    <% }) %> 
+  </div>
+
+  
 
   
 
 <div id="homeGroup">
-  
-  <a id="homeButton" href="/">HOME</a>
+  <a href="/mountain/new"> Create a New Location</a>
 </div>
 
 

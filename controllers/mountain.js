@@ -17,7 +17,7 @@ async function show(req, res){
 
 async function create(req, res){
   req.body.complete = !!req.body.complete
-  const mountain = await Mountain.create(req, res)
+  const mountain = await Mountain.create(req.body)
   res.redirect('/mountain')
 }
 

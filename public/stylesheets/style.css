@@ -42,6 +42,11 @@ input{
   margin-left: 10px;
 }
 
+img{
+  height: 100%;
+  width: 100%;
+}
+
 .deleteArea{
   display: flex;
   align-items: center;
@@ -68,12 +73,41 @@ input{
 }
 
 
+
+/** start of urban section **/
+
+
+#urbanBar{
+  background: linear-gradient(to right, #30004d,#7d0000c4);
+  font-family: Luminari, fantasy;
+  color: #C8B090;
+  padding: 50px;
+  text-align: left;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  background-image: url(https://media2.miaminewtimes.com/mia/imager/u/slideshow/8219119/04-lost-miami-new-times-credit-david-bulit.jpg?cb=1642618870);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 400px;
+  object-fit: contain;
+}
+
+#newMountain{
+  display: flex;
+  margin-top: 5%;
+  height: 520px;
+  background: linear-gradient(to top, #0b5712, #8c6510, #7e7777);
+}
+
+/* #74581c , #917a36a3, #1b741e,#046b24) */
 /** start for beach section **/
 
 #beachList{
   margin-left: 30px;
   margin-top: 10px;
   margin-bottom: 5px;
+  font-size: 30px;
 }
 
 #newBeach{

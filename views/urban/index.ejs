@@ -9,7 +9,7 @@
 </head>
 <body class="area">
   
-  <div id="mountainBar">
+  <div id="urbanBar">
     <h1 class="header"> 
       Urban Exploring
     </h1>
@@ -30,11 +30,23 @@
     </div>
   </div>
 
+  <p id="indexP">
+    Here is where our explorers can take a new approach to adventure, by delving into what has been left behind by man. Finding new areas that were forgotten by their makers, but rediscovered by those would seek them out. This includeds all man made structures that have been abandonded for any number of reasons, whether its inside or outside of the city. 
+  </p>
 
+  <div id="beachAreas">
+    <% urbans.forEach(u => { %> 
+      See 
+      <a href="/urban/<%= u.title %>">details</a>
+      for:
+      <%= u.title %> 
+    <% }) %> 
+  </div>
 
   
 
 <div id="homeGroup">
+  <a href="/urban/new">Add your Location !</a>
   <a id="homeButton" href="/">HOME</a>
 </div>
 
