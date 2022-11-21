@@ -36,11 +36,15 @@
 
   <div id="beachAreas">
     <% urbans.forEach(u => { %> 
-      See 
-      <a href="/urban/<%= u.title %>">details</a>
-      for:
-      <%= u.title %> 
+      <div id="beachDiv">
+        See 
+        <a href="/urban/<%= u._id %>">details</a>
+        for:
+        <%= u.title %> 
+      </div>
     <% }) %> 
+    
+    </form>
   </div>
 
   

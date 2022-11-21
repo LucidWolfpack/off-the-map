@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/stylesheets/style.css">
+  <title>Document</title>
+</head>
+<body class="area">
+  
+  <div id="urbanBar">
+    <h1 class="header"> 
+      Urban Exploring
+    </h1>
+
+    <div id="iconPosition">
+      <a href="/">
+        <img class="headIcon" src="https://cdn-icons-png.flaticon.com/512/1946/1946436.png" alt="">
+      </a>
+      <a href="/beach">
+        <img class="headIcon" src="https://cdn-icons-png.flaticon.com/512/2347/2347758.png" alt="">
+      </a>
+      <a href="/mountain">
+        <img class="headIcon" src="https://cdn-icons-png.flaticon.com/512/281/281568.png" alt="">
+      </a>
+      <a href="/urban">
+        <img class="headIcon" src="https://cdn-icons-png.flaticon.com/512/63/63610.png" alt="">
+      </a>
+    </div>
+  </div>
+
+  <div id="newUrban">
+    <p id="aboutSection">
+      Is something out of place or maybe needs some fine tuning? Here is where you can make adjustments to a location as needed. All feilds are able to be updated and changed. Please only adjsut if necessary
+    </p>
+    <form action="/urban/<%= urban._id %>?_method=PUT" method="post" id="beachForm">
+      <label for="title"> Adjust location Name:
+        <input type="text" name="title" required value="<%= urban.title %> " id="">  
+      </label>
+        <br>
+      <label for="level"> Difficulty:
+        <input type="text" name="level" value="<%= urban.level %> " >
+      </label>
+        <br>
+      <label for="gear">What gear is needed?
+        <input type="text" name="gear" value="<%= urban.gear %> ">
+      </label>
+        <br>
+      <label for="area">Provide a desctiption  of how to get there
+        <textarea name="area" id="" cols="30" rows="10" > <%= urban.area %> </textarea>
+      </label>
+        <br>
+      <button type="submit" id="submit">Submit</button>
+        <br>
+    </form>
+
+  </div>
+
+  <div class="deleteArea">
+    <p>Or would you like to delete this area?</p>
+    <form action="/urban/<%= urban._id %>?_method=DELETE" method="post" >
+      <button type="submit" id="deleteButton">  Delete this Area</button>
+    </form>
+  </div>
+
+<div id="homeGroup">
+<a href="/urban/<%= urban._id %> " id="">BACK</a>
+<a id="" href="/">HOME</a>
+</div>
+
+</body>
+</html>

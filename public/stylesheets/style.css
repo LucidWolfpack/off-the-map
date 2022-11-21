@@ -72,6 +72,12 @@ img{
   height: 400px;
 }
 
+#newMountain{
+  display: flex;
+  margin-top: 5%;
+  height: 520px;
+  background: linear-gradient(to top, #0b5712, #8c6510, #7e7777);
+}
 
 
 /** start of urban section **/
@@ -93,12 +99,13 @@ img{
   object-fit: contain;
 }
 
-#newMountain{
+#newUrban{
   display: flex;
   margin-top: 5%;
   height: 520px;
-  background: linear-gradient(to top, #0b5712, #8c6510, #7e7777);
+  background: linear-gradient(to top, #2d4348, #9d8665, #7d98b2);
 }
+
 
 /* #74581c , #917a36a3, #1b741e,#046b24) */
 /** start for beach section **/

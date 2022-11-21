@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/stylesheets/style.css">
+  <title>Document</title>
+</head>
+<body class="area">
+  <div id="urbanBar">
+    <h1 class="header"> 
+      Urban Exploring
+    </h1>
+
+    <div id="iconPosition">
+      <a href="/">
+        <img class="headIcon" src="https://cdn-icons-png.flaticon.com/512/1946/1946436.png" alt="">
+      </a>
+      <a href="/beach">
+        <img class="headIcon" src="https://cdn-icons-png.flaticon.com/512/2347/2347758.png" alt="">
+      </a>
+      <a href="/mountain">
+        <img class="headIcon" src="https://cdn-icons-png.flaticon.com/512/281/281568.png" alt="">
+      </a>
+      <a href="/urban">
+        <img class="headIcon" src="https://cdn-icons-png.flaticon.com/512/63/63610.png" alt="">
+      </a>
+    </div>
+  </div>
+
+  <div id="newUrban" >
+    <p id="aboutSection">
+      Have a new area in mind? Please provide information for all the listed fields so that we can get: a rating of hard it is to get there; what gear is need to make the trip happen; and an accurate description of how to reach the location.
+    </p>
+    <form action="/urban" method="post" id="beachForm">
+      <label for="title">Name Your location:
+        <input type="text" name="title" required placeholder="Title" id="todoTitle">  
+      </label>
+      <br>
+      <label for="level"> Difficulty:
+        <input type="text" name="level" required placeholder="normal-hard-expert" >
+      </label>
+      <br>
+      <label for="gear">What gear is needed?
+        <input type="text" name="gear" required placeholder="boots, kayak, gloves etc.">
+      </label>
+      <br>
+      <label for="area">Provide a desctiption  of how to get there
+        <!-- <input type="textarea" name="area" id=""> -->
+        <textarea name="area" id="" cols="30" rows="10">
+
+        </textarea>
+      </label>
+      <br>
+        <button type="submit" id="submit">Submit</button>
+    </form>
+  </div>
+
+  <div id="homeGroup">
+    <a href="/urban">Back to Urban Exploring</a>
+    <a href="/">Home</a>
+  </div>
+
+
+</body>
+</html>
