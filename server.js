@@ -10,7 +10,7 @@ import './config/database.js'
 
 // Router Imports
 import { router as indexRouter } from './routes/index.js'
-import { router as todosRouter } from './routes/todos.js'
+//import { router as todosRouter } from './routes/todos.js'
 import { router as beachRouter  } from './routes/beach.js'
 import { router as mountainRouter } from './routes/mountain.js'
 import { router as urbanRouter } from './routes/urban.js'
@@ -35,7 +35,7 @@ app.use(methodOverride('_method'))
 
 // Mounted Routers
 app.use('/', indexRouter)
-app.use('/todos', todosRouter)
+// app.use('/todos', todosRouter)
 app.use('/beach', beachRouter)
 app.use('/mountain', mountainRouter)
 app.use('/urban', urbanRouter)
