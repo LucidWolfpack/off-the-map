@@ -1,4 +1,4 @@
-import {Todo} from "../models/todo.js"
+import {Todo} from "../models/todos.js"
 
 async function index(req, res) {
   const todos = await Todo.find({})
@@ -82,4 +82,3 @@ export{
   createInstance,
   deleteInstance
 }
-
